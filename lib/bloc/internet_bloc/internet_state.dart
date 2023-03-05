@@ -1,5 +1,7 @@
-class InternetEvent {}
+abstract class InternetState {}
 
-class InternetLostEvent extends InternetEvent {}
+class InternetInitialState extends InternetState {}
 
-class InternetGainedEvent extends InternetEvent {}
+class InternetLostState extends InternetState {}
+
+class InternetGainedState extends InternetState {}
